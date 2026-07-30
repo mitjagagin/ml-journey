@@ -9,4 +9,4 @@ print(message)
 
 # 3. Намеренно делаем опечатку: пишем 'Message' с большой буквы
 # Python не знает такую переменную!
-print(Message)
+print(message)
