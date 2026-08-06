@@ -21,9 +21,9 @@
 ## 📚 Изучаемые книги и ресурсы
 
 ### Колея 1: Python (Фундамент)
-- [x] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 1-3 полностью)
-- [ ] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 4 — в процессе, до 4.3.3)
-- [ ] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 5-11)
+- [x] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 1-4 полностью)
+- [ ] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 5 — в процессе)
+- [ ] Eric Matthes — *Python Crash Course (3rd ed.)* (Ch. 6-11)
 
 ### Колея 2: ML-теория
 - [ ] Chip Huyen — *Designing ML Systems* (Ch. 1-4)
@@ -55,7 +55,7 @@
 
 | Этап | Название | Длительность | Статус |
 |------|----------|--------------|--------|
-| 0 | Фундамент: Python Core + ML-основы + математика | 4-5 недель (интегрированный) | 🔄 В процессе (Matthes Ch.1-3 ✅, Ch.4 🔄) |
+| 0 | Фундамент: Python Core + ML-основы + математика | 4-5 недель (интегрированный) | 🔄 В процессе (Matthes Ch.1-4 ✅, Ch.5 🔄) |
 | 1 | Первый ML-проект: Wine Classifier | 2-3 недели | ⚪ Ожидает |
 | 2 | ML as a Service: House Price Predictor | 3-4 недели | ⚪ Ожидает |
 | 3 | MLOps + Cloud: Sentiment Analyzer API | 4-5 недель | ⚪ Ожидает |
@@ -72,4 +72,4 @@
 - **Первый push:** 2026-08-02
 
 ---
-**Последнее обновление:** 2026-08-03
+**Последнее обновление:** 2026-08-06
