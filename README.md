@@ -4,9 +4,9 @@
 
 ## 📍 Текущий статус
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
-- **Прогресс:** Matthes Ch.1-3 завершены, Ch.4 в процессе (до 4.3.2)
+- **Прогресс:** Matthes Ch.1-4 завершены. Переход к Глава 5 (if Statements).
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Matthes 4.3.3-4.3.4 (статистика списков, list comprehensions)
+- **Следующий шаг:** Matthes 5.1 (A Simple Example)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
@@ -40,6 +40,7 @@
 - **VCS:** Git + GitHub (атомарные коммиты, Conventional Commits)
 - **Контейнеризация:** Docker Desktop
 - **Структура проекта:** `src/` (продакшен), `tutorials/` (учебные скрипты), `tests/`, `data/`, `notebooks/`
+- **Стандарт оформления:** Строгий нейминг `step_NN_snake_case_name.py` и единый формат docstring для учебных скриптов.
 
 ## 📂 Структура проекта
 
@@ -61,8 +62,9 @@
 - ✅ Глава 1: Getting Started
 - ✅ Глава 2: Variables and Simple Data Types
 - ✅ Глава 3: Introducing Lists (полностью)
-- 🔄 Глава 4: Working with Lists (до 4.3.2)
-- ⏳ Глава 5-11: if Statements, Dictionaries, Functions, Classes, Files, Testing
+- ✅ Глава 4: Working with Lists (полностью: Slicing, Copying Lists, Tuples, Styling Code)
+- 🔄 Глава 5: if Statements
+- ⏳ Глава 6-11: Dictionaries, Functions, Classes, Files, Testing
 
 ### ML/AI Engineering
 - ⏳ McMahon Ch.1-2: Introduction to ML Engineering
@@ -104,4 +106,4 @@
 
 ---
 **Статус:** Активная разработка
-**Последнее обновление:** 2026-08-03
+**Последнее обновление:** 2026-08-06
