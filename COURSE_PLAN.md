@@ -64,19 +64,19 @@
 - [x] 4.5.3 Writing Tuples That Change
 
 **Глава 5: if Statements**
-- [ ] 5.1 A Simple Example
-- [ ] 5.2 Conditional Tests
-- [ ] 5.2.1 Checking for Equality
-- [ ] 5.2.2 Ignoring Case When Checking for Equality
-- [ ] 5.2.3 Checking for Inequality
-- [ ] 5.2.4 Numerical Comparisons
-- [ ] 5.2.5 Checking Multiple Conditions (and, or)
-- [ ] 5.2.6 Checking Whether a Value Is in a List (in, not in)
-- [ ] 5.2.7 Boolean Expressions
-- [ ] 5.3 if Statements
-- [ ] 5.3.1 Simple if Statements
-- [ ] 5.3.2 if-else Statements
-- [ ] 5.3.3 The if-elif-else Chain
+- [x] 5.1 A Simple Example
+- [x] 5.2 Conditional Tests
+- [x] 5.2.1 Checking for Equality
+- [x] 5.2.2 Ignoring Case When Checking for Equality
+- [x] 5.2.3 Checking for Inequality
+- [x] 5.2.4 Numerical Comparisons
+- [x] 5.2.5 Checking Multiple Conditions (and, or)
+- [x] 5.2.6 Checking Whether a Value Is in a List (in, not in)
+- [x] 5.2.7 Boolean Expressions
+- [x] 5.3 if Statements
+- [x] 5.3.1 Simple if Statements
+- [x] 5.3.2 if-else Statements
+- [x] 5.3.3 The if-elif-else Chain
 - [ ] 5.3.4 Using Multiple elif Blocks
 - [ ] 5.3.5 Omitting the else Block
 - [ ] 5.3.6 Testing Multiple Conditions
