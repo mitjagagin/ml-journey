@@ -77,12 +77,12 @@
 - [x] 5.3.1 Simple if Statements
 - [x] 5.3.2 if-else Statements
 - [x] 5.3.3 The if-elif-else Chain
-- [ ] 5.3.4 Using Multiple elif Blocks
-- [ ] 5.3.5 Omitting the else Block
-- [ ] 5.3.6 Testing Multiple Conditions
+- [x] 5.3.4 Using Multiple elif Blocks
+- [x] 5.3.5 Omitting the else Block
+- [x] 5.3.6 Testing Multiple Conditions
 - [ ] 5.4 Using if Statements with Lists
-- [ ] 5.4.1 Checking for Special Items
-- [ ] 5.4.2 Checking That a List Is Not Empty
+- [x] 5.4.1 Checking for Special Items
+- [x] 5.4.2 Checking That a List Is Not Empty
 - [ ] 5.4.3 Using Multiple Lists
 - [ ] 5.5 Setting Up Your if Statements for Success (PEP 8 style)
 

@@ -4,9 +4,9 @@
 
 ## 📍 Текущий статус
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
-- **Прогресс:** Matthes Ch.1-4 завершены. Переход к Глава 5 (if Statements).
+- **Прогресс:** Matthes Ch.1-4 завершены полностью. В Главе 5 пройдены 5.1-5.3.6, 5.4.1-5.4.2 (шаги 49-65). Осталось: 5.4.3 и 5.5.
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Matthes 5.1 (A Simple Example)
+- **Следующий шаг:** Matthes 5.4.3 (Using Multiple Lists)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
@@ -46,7 +46,7 @@
 
     ml-journey/
     ├── src/                  # Продакшен-код (ML-пайплайны, модели)
-    ├── tutorials/            # Учебные скрипты по Matthes
+    ├── tutorials/            # Учебные скрипты по Matthes (65+ файлов)
     ├── tests/                # Unit-тесты (pytest)
     ├── data/                 # Датасеты
     ├── notebooks/            # Jupyter-ноутбуки для EDA
@@ -63,7 +63,7 @@
 - ✅ Глава 2: Variables and Simple Data Types
 - ✅ Глава 3: Introducing Lists (полностью)
 - ✅ Глава 4: Working with Lists (полностью: Slicing, Copying Lists, Tuples, Styling Code)
-- 🔄 Глава 5: if Statements
+- 🔄 Глава 5: if Statements (пройдены 5.1-5.3.6, 5.4.1-5.4.2; осталось 5.4.3, 5.5)
 - ⏳ Глава 6-11: Dictionaries, Functions, Classes, Files, Testing
 
 ### ML/AI Engineering
@@ -106,4 +106,4 @@
 
 ---
 **Статус:** Активная разработка
-**Последнее обновление:** 2026-08-06
+**Последнее обновление:** 2026-08-08
