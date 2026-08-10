@@ -71,7 +71,7 @@
 - [x] 5.2.3 Checking for Inequality
 - [x] 5.2.4 Numerical Comparisons
 - [x] 5.2.5 Checking Multiple Conditions (and, or)
-- [x] 5.2.6 Checking Whether a Value Is in a List (in, not in)
+- [x] 5.2.6 Checking Whether a Value Is in List (in, not in)
 - [x] 5.2.7 Boolean Expressions
 - [x] 5.3 if Statements
 - [x] 5.3.1 Simple if Statements
@@ -80,30 +80,30 @@
 - [x] 5.3.4 Using Multiple elif Blocks
 - [x] 5.3.5 Omitting the else Block
 - [x] 5.3.6 Testing Multiple Conditions
-- [ ] 5.4 Using if Statements with Lists
+- [x] 5.4 Using if Statements with Lists
 - [x] 5.4.1 Checking for Special Items
 - [x] 5.4.2 Checking That a List Is Not Empty
-- [ ] 5.4.3 Using Multiple Lists
-- [ ] 5.5 Setting Up Your if Statements for Success (PEP 8 style)
+- [x] 5.4.3 Using Multiple Lists
+- [x] 5.5 Setting Up Your if Statements for Success (PEP 8 style)
 
 **Глава 6: Dictionaries**
-- [ ] 6.1 A Simple Dictionary
-- [ ] 6.2 Working with Dictionaries
-- [ ] 6.2.1 Accessing Values in a Dictionary
-- [ ] 6.2.2 Adding New Key-Value Pairs
-- [ ] 6.2.3 Starting with an Empty Dictionary
-- [ ] 6.2.4 Modifying Values in a Dictionary
-- [ ] 6.2.5 Removing Key-Value Pairs (del)
-- [ ] 6.2.6 Using get() to Access Values
-- [ ] 6.3 Looping Through a Dictionary
-- [ ] 6.3.1 Looping Through All Key-Value Pairs (items())
-- [ ] 6.3.2 Looping Through All the Keys in a Dictionary (keys())
-- [ ] 6.3.3 Looping Through All Values in a Dictionary (values())
-- [ ] 6.3.4 Looping Through a Dictionary's Keys in a Particular Order (sorted())
-- [ ] 6.4 Nesting
-- [ ] 6.4.1 A List of Dictionaries
-- [ ] 6.4.2 A List in a Dictionary
-- [ ] 6.4.3 A Dictionary in a Dictionary
+- [x] 6.1 A Simple Dictionary
+- [x] 6.2 Working with Dictionaries
+- [x] 6.2.1 Accessing Values in a Dictionary
+- [x] 6.2.2 Adding New Key-Value Pairs
+- [x] 6.2.3 Starting with an Empty Dictionary
+- [x] 6.2.4 Modifying Values in a Dictionary
+- [x] 6.2.5 Removing Key-Value Pairs (del)
+- [x] 6.2.6 Using get() to Access Values
+- [x] 6.3 Looping Through a Dictionary
+- [x] 6.3.1 Looping Through All Key-Value Pairs (items())
+- [x] 6.3.2 Looping Through All the Keys in a Dictionary (keys())
+- [x] 6.3.3 Looping Through All Values in a Dictionary (values())
+- [x] 6.3.4 Looping Through a Dictionary's Keys in a Particular Order (sorted())
+- [x] 6.4 Nesting
+- [x] 6.4.1 A List of Dictionaries
+- [x] 6.4.2 A List in a Dictionary
+- [x] 6.4.3 A Dictionary in a Dictionary
 
 **Глава 7: User Input and while Loops**
 - [ ] 7.1 How the input() Function Works
@@ -631,7 +631,6 @@
 - [ ] Мониторинг (CometML)
 - [ ] A/B тестирование
 - [ ] Kaggle: участие в соревнованиях
-- [ ] Подготовка к собеседованиям (LeetCode, System Design, Mock interviews)
 - [ ] Финальная подготовка к собеседованиям (LeetCode, System Design, Mock interviews)
 
 **Результат:** Production-ready LLM-приложение для портфолио.
