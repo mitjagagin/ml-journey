@@ -4,18 +4,18 @@
 
 ## 📍 Текущий статус
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
-- **Прогресс:** Matthes Ch.1-4 завершены полностью. В Главе 5 пройдены 5.1-5.3.6, 5.4.1-5.4.2 (шаги 49-65). Осталось: 5.4.3 и 5.5.
+- **Прогресс:** Matthes Ch.1-6 закрыты полностью (81 учебный скрипт). Детальный план со всеми подглавами — в [`COURSE_PLAN.md`](COURSE_PLAN.md).
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Matthes 5.4.3 (Using Multiple Lists)
+- **Следующий шаг:** Matthes 7.1 (How the input() Function Works)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
-Построить 5 production-ready ML/AI проектов для портфолио:
+Построить 5 production-ready ML/AI проектов для портфолио (детальная карта — в [`ROADMAP.md`](ROADMAP.md)):
 1. **Wine Classifier** — классический ML (sklearn, RandomForest)
 2. **House Price Predictor** — FastAPI + Docker
 3. **Sentiment Analyzer API** — MLOps, CI/CD, AWS
 4. **RAG Chatbot** — векторные БД, эмбеддинги
-5. **LLM Twin** — fine-tuning (SFT/QLoRA/DPO) на Google Colab
+5. **LLM Twin (Production-ready)** — fine-tuning (SFT/QLoRA/DPO) на Google Colab
 
 ## 📚 База знаний
 
@@ -46,53 +46,15 @@
 
     ml-journey/
     ├── src/                  # Продакшен-код (ML-пайплайны, модели)
-    ├── tutorials/            # Учебные скрипты по Matthes (65+ файлов)
+    ├── tutorials/            # Учебные скрипты по Matthes (81+ файлов)
     ├── tests/                # Unit-тесты (pytest)
     ├── data/                 # Датасеты
     ├── notebooks/            # Jupyter-ноутбуки для EDA
-    ├── COURSE_PLAN.md        # Детальный план курса с подглавами
+    ├── COURSE_PLAN.md        # Детальный план курса с подглавами (источник истины)
     ├── ROADMAP.md            # Карта из 5 проектов-вех
     ├── LEARNING_JOURNAL.md   # Инженерное портфолио
     ├── GIT_WORKFLOW.md       # Правила атомарных коммитов
     └── README.md             # Этот файл
-
-## 📊 Прогресс изучения
-
-### Python (Matthes)
-- ✅ Глава 1: Getting Started
-- ✅ Глава 2: Variables and Simple Data Types
-- ✅ Глава 3: Introducing Lists (полностью)
-- ✅ Глава 4: Working with Lists (полностью: Slicing, Copying Lists, Tuples, Styling Code)
-- 🔄 Глава 5: if Statements (пройдены 5.1-5.3.6, 5.4.1-5.4.2; осталось 5.4.3, 5.5)
-- ⏳ Глава 6-11: Dictionaries, Functions, Classes, Files, Testing
-
-### ML/AI Engineering
-- ⏳ McMahon Ch.1-2: Introduction to ML Engineering
-- ⏳ Huyen DMLS Ch.1-4: ML Systems, Data Engineering, Feature Engineering, Model Development
-- ⏳ Проект 1: Wine Classifier (baseline)
-
-### Data Science (Python)
-- ⏳ Kaggle Learn: Pandas
-- ⏳ NumPy, Matplotlib, Seaborn (ментор)
-
-### Математика для ML
-- ⏳ 3Blue1Brown: Essence of Linear Algebra
-- ⏳ Статистика и теория вероятностей (ментор)
-
-### Инженерные основы
-- ⏳ SQLZoo (SQL)
-- ⏳ HTTP/API, Linux/Bash, продвинутый Git (ментор)
-
-## 🗺️ Этапы курса
-
-| Этап | Название | Длительность | Статус |
-|------|----------|--------------|--------|
-| 0 | Фундамент: Python Core + ML-основы + математика | 4-5 недель (интегрированный) | 🔄 В процессе |
-| 1 | Первый ML-проект: Wine Classifier | 2-3 недели | ⚪ Ожидает |
-| 2 | ML as a Service: House Price Predictor | 3-4 недели | ⚪ Ожидает |
-| 3 | MLOps + Cloud: Sentiment Analyzer API | 4-5 недель | ⚪ Ожидает |
-| 4 | Foundation Models + RAG | 5-6 недель | ⚪ Ожидает |
-| 5 | Fine-tuning + Production: LLM Twin | 5-6 недель | ⚪ Ожидает |
 
 ## 🔗 Ссылки
 - **GitHub:** [mitjagagin/ml-journey](https://github.com/mitjagagin/ml-journey)
@@ -106,4 +68,4 @@
 
 ---
 **Статус:** Активная разработка
-**Последнее обновление:** 2026-08-08
+**Последнее обновление:** 2026-08-09
