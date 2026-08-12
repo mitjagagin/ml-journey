@@ -106,21 +106,21 @@
 - [x] 6.4.3 A Dictionary in a Dictionary
 
 **Глава 7: User Input and while Loops**
-- [ ] 7.1 How the input() Function Works
-- [ ] 7.1.1 Writing Clear Prompts
-- [ ] 7.1.2 Using int() to Accept Numerical Input
-- [ ] 7.1.3 The Modulo Operator (%)
-- [ ] 7.2 Introducing while Loops
-- [ ] 7.2.1 The while Loop in Action
-- [ ] 7.2.2 Letting the User Choose When to Quit
-- [ ] 7.2.3 Using a Flag
-- [ ] 7.2.4 Using break to Exit a Loop
-- [ ] 7.2.5 Using continue in a Loop
-- [ ] 7.2.6 Avoiding Infinite Loops
-- [ ] 7.3 Using a while Loop with Lists and Dictionaries
-- [ ] 7.3.1 Moving Items from One List to Another
-- [ ] 7.3.2 Removing All Instances of Specific Values from a List
-- [ ] 7.3.3 Filling a Dictionary with User Input
+- [x] 7.1 How the input() Function Works
+- [x] 7.1.1 Writing Clear Prompts
+- [x] 7.1.2 Using int() to Accept Numerical Input
+- [x] 7.1.3 The Modulo Operator (%)
+- [x] 7.2 Introducing while Loops
+- [x] 7.2.1 The while Loop in Action
+- [x] 7.2.2 Letting the User Choose When to Quit
+- [x] 7.2.3 Using a Flag
+- [x] 7.2.4 Using break to Exit a Loop
+- [x] 7.2.5 Using continue in a Loop
+- [x] 7.2.6 Avoiding Infinite Loops
+- [x] 7.3 Using a while Loop with Lists and Dictionaries
+- [x] 7.3.1 Moving Items from One List to Another
+- [x] 7.3.2 Removing All Instances of Specific Values from a List
+- [x] 7.3.3 Filling a Dictionary with User Input
 
 **Глава 8: Functions**
 - [ ] 8.1 Defining a Function
@@ -307,7 +307,7 @@
 - [ ] 1.4 Project Structure Best Practices (src/, tests/, data/)
 - [ ] 1.5 Version Control with Git
 
-**McMahon, Глава 2: The ML Development Process**
+**McMahon, Глава 2: The Machine Learning Development Process**
 - [ ] 2.1 Discovery Phase
 - [ ] 2.2 Play Stage
 - [ ] 2.3 Develop Stage
