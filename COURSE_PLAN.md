@@ -123,24 +123,24 @@
 - [x] 7.3.3 Filling a Dictionary with User Input
 
 **Глава 8: Functions**
-- [ ] 8.1 Defining a Function
-- [ ] 8.2 Passing Arguments
-- [ ] 8.2.1 Positional Arguments
-- [ ] 8.2.2 Keyword Arguments
-- [ ] 8.2.3 Default Values
-- [ ] 8.2.4 Equivalent Function Calls
-- [ ] 8.2.5 Avoiding Argument Errors
-- [ ] 8.3 Return Values
-- [ ] 8.3.1 Returning a Simple Value
-- [ ] 8.3.2 Making an Argument Optional
-- [ ] 8.3.3 Returning a Dictionary
-- [ ] 8.3.4 Returning a List
-- [ ] 8.3.5 Passing a List
-- [ ] 8.3.6 Modifying a List in a Function
-- [ ] 8.3.7 Preventing a Function from Modifying a List
-- [ ] 8.3.8 Passing an Arbitrary Number of Arguments (*args, **kwargs)
-- [ ] 8.3.9 Mixing Positional and Arbitrary Arguments
-- [ ] 8.3.10 Using Arbitrary Keyword Arguments
+- [x] 8.1 Defining a Function
+- [x] 8.2 Passing Arguments
+- [x] 8.2.1 Positional Arguments
+- [x] 8.2.2 Keyword Arguments
+- [x] 8.2.3 Default Values
+- [x] 8.2.4 Equivalent Function Calls
+- [x] 8.2.5 Avoiding Argument Errors
+- [x] 8.3 Return Values
+- [x] 8.3.1 Returning a Simple Value
+- [x] 8.3.2 Making an Argument Optional
+- [x] 8.3.3 Returning a Dictionary
+- [x] 8.3.4 Returning a List
+- [x] 8.3.5 Passing a List
+- [x] 8.3.6 Modifying a List in a Function
+- [x] 8.3.7 Preventing a Function from Modifying a List
+- [x] 8.3.8 Passing an Arbitrary Number of Arguments (*args, **kwargs)
+- [x] 8.3.9 Mixing Positional and Arbitrary Arguments
+- [x] 8.3.10 Using Arbitrary Keyword Arguments
 
 **Глава 9: Classes**
 - [ ] 9.1 Creating and Using a Class
