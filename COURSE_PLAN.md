@@ -143,17 +143,17 @@
 - [x] 8.3.10 Using Arbitrary Keyword Arguments
 
 **Глава 9: Classes**
-- [ ] 9.1 Creating and Using a Class
-- [ ] 9.1.1 Creating the Dog Class (init, self)
-- [ ] 9.1.2 The init() Method
-- [ ] 9.1.3 Making an Instance from a Class
-- [ ] 9.1.4 Accessing Attributes
-- [ ] 9.1.5 Calling Methods
-- [ ] 9.1.6 Creating Multiple Instances
-- [ ] 9.2 Working with Classes and Instances
-- [ ] 9.2.1 The Car Class
-- [ ] 9.2.2 Setting a Default Value for an Attribute
-- [ ] 9.2.3 Modifying Attribute Values
+- [x] 9.1 Creating and Using a Class
+- [x] 9.1.1 Creating the Dog Class (init, self)
+- [x] 9.1.2 The init() Method
+- [x] 9.1.3 Making an Instance from a Class
+- [x] 9.1.4 Accessing Attributes
+- [x] 9.1.5 Calling Methods
+- [x] 9.1.6 Creating Multiple Instances
+- [x] 9.2 Working with Classes and Instances
+- [x] 9.2.1 The Car Class
+- [x] 9.2.2 Setting a Default Value for an Attribute
+- [x] 9.2.3 Modifying Attribute Values
 - [ ] 9.3 Inheritance
 - [ ] 9.3.1 The init() Method for a Child Class
 - [ ] 9.3.2 Defining Attributes and Methods for the Child Class
