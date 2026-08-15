@@ -5,12 +5,16 @@
 перед их подачей в модель.
 """
 
-def format_name(first: str, last: str) -> str:
-    """Возвращает отформатированное полное имя."""
-    full_name: str = f"{first} {last}"
+def format_name(first: str, last: str, middle: str = '') -> str:
+    """Возвращает отформатированное полное имя, опционально с средним."""
+    if middle:
+        full_name: str = f"{first} {middle} {last}"
+    else:
+        full_name: str = f"{first} {last}"
     return full_name.title()
 
 # Проверка работы функции (для ручного запуска)
 if __name__ == "__main__":
     print("Результат работы функции:")
     print(f"  {format_name('janis', 'joplin')}")
+    print(f"  {format_name('john', 'hooker', 'lee')}")
