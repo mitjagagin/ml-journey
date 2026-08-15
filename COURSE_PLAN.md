@@ -154,20 +154,20 @@
 - [x] 9.2.1 The Car Class
 - [x] 9.2.2 Setting a Default Value for an Attribute
 - [x] 9.2.3 Modifying Attribute Values
-- [ ] 9.3 Inheritance
-- [ ] 9.3.1 The init() Method for a Child Class
-- [ ] 9.3.2 Defining Attributes and Methods for the Child Class
-- [ ] 9.3.3 Overriding Methods from the Parent Class
-- [ ] 9.3.4 Instances as Attributes
-- [ ] 9.3.5 Modeling Real-World Objects
-- [ ] 9.4 Importing Classes
-- [ ] 9.4.1 Importing a Single Class
-- [ ] 9.4.2 Storing Multiple Classes in a Module
-- [ ] 9.4.3 Importing Multiple Classes from a Module
-- [ ] 9.4.4 Importing an Entire Module
-- [ ] 9.4.5 Importing All Classes from a Module
-- [ ] 9.5 The Python Standard Library (random, collections)
-- [ ] 9.6 Class Coding Style (PEP 8)
+- [x] 9.3 Inheritance
+- [x] 9.3.1 The init() Method for a Child Class
+- [x] 9.3.2 Defining Attributes and Methods for the Child Class
+- [x] 9.3.3 Overriding Methods from the Parent Class
+- [x] 9.3.4 Instances as Attributes
+- [x] 9.3.5 Modeling Real-World Objects
+- [x] 9.4 Importing Classes
+- [x] 9.4.1 Importing a Single Class
+- [x] 9.4.2 Storing Multiple Classes in a Module
+- [x] 9.4.3 Importing Multiple Classes from a Module
+- [x] 9.4.4 Importing an Entire Module
+- [x] 9.4.5 Importing All Classes from a Module
+- [x] 9.5 The Python Standard Library (random, collections)
+- [x] 9.6 Class Coding Style (PEP 8)
 
 **Глава 10: Files and Exceptions**
 - [ ] 10.1 Reading from a File
