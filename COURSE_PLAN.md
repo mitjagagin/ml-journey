@@ -170,25 +170,25 @@
 - [x] 9.6 Class Coding Style (PEP 8)
 
 **Глава 10: Files and Exceptions**
-- [ ] 10.1 Reading from a File
-- [ ] 10.1.1 Reading the Entire File (read)
-- [ ] 10.1.2 File Paths (relative vs absolute)
-- [ ] 10.1.3 Making a List of Lines from a File (readlines)
-- [ ] 10.1.4 Working with a File's Contents
-- [ ] 10.1.5 Writing to a File (write mode 'w', append mode 'a')
-- [ ] 10.1.6 Writing Multiple Lines
-- [ ] 10.1.7 Appending to a File
-- [ ] 10.2 Exceptions
-- [ ] 10.2.1 Handling the ZeroDivisionError Exception
-- [ ] 10.2.2 Using try-except Blocks
-- [ ] 10.2.3 Handling the FileNotFoundError Exception
-- [ ] 10.2.4 Analyzing Text (split, count)
-- [ ] 10.2.5 Working with Multiple Files
-- [ ] 10.2.6 Failing Silently (pass)
-- [ ] 10.3 Storing Data (JSON)
-- [ ] 10.3.1 Using json.dump() and json.load()
-- [ ] 10.3.2 Refactoring
-- [ ] 10.4 Reading and Writing JSON Data
+- [x] 10.1 Reading from a File
+- [x] 10.1.1 Reading the Entire File (read)
+- [x] 10.1.2 File Paths (relative vs absolute)
+- [x] 10.1.3 Making a List of Lines from a File (readlines)
+- [x] 10.1.4 Working with a File's Contents
+- [x] 10.1.5 Writing to a File (write mode 'w', append mode 'a')
+- [x] 10.1.6 Writing Multiple Lines
+- [x] 10.1.7 Appending to a File
+- [x] 10.2 Exceptions
+- [x] 10.2.1 Handling the ZeroDivisionError Exception
+- [x] 10.2.2 Using try-except Blocks
+- [x] 10.2.3 Handling the FileNotFoundError Exception
+- [x] 10.2.4 Analyzing Text (split, count)
+- [x] 10.2.5 Working with Multiple Files
+- [x] 10.2.6 Failing Silently (pass)
+- [x] 10.3 Storing Data (JSON)
+- [x] 10.3.1 Using json.dump() and json.load()
+- [x] 10.3.2 Refactoring
+- [x] 10.4 Reading and Writing JSON Data
 
 **Глава 11: Testing Your Code**
 - [ ] 11.1 Testing a Function
