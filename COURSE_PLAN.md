@@ -191,14 +191,14 @@
 - [x] 10.4 Reading and Writing JSON Data
 
 **Глава 11: Testing Your Code**
-- [ ] 11.1 Testing a Function
-- [ ] 11.1.1 A Passing Test (assertEqual)
-- [ ] 11.1.2 A Failing Test
-- [ ] 11.1.3 Responding to a Failed Test
-- [ ] 11.2 Testing a Class
-- [ ] 11.2.1 A Variety of Assert Methods (assertTrue, assertIn)
-- [ ] 11.2.2 A Test Case with Multiple Tests (setUp method)
-- [ ] 11.3 Project: Populating a City
+- [x] 11.1 Testing a Function
+- [x] 11.1.1 A Passing Test (assertEqual)
+- [x] 11.1.2 A Failing Test
+- [x] 11.1.3 Responding to a Failed Test
+- [x] 11.2 Testing a Class
+- [x] 11.2.1 A Variety of Assert Methods (assertTrue, assertIn)
+- [x] 11.2.2 A Test Case with Multiple Tests (setUp method)
+- [x] 11.3 Project: Populating a City
 
 ### Колея 2: ML-теория (Huyen DMLS Ch.1-4 + ментор)
 
