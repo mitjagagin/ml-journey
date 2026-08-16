@@ -6,7 +6,7 @@
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
 - **Прогресс:** Matthes Ch.1-11 закрыты полностью (включая Главу 11: Testing Your Code) — 158 учебных скриптов. Детальный план со всеми подглавами — в [`COURSE_PLAN.md`](COURSE_PLAN.md).
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Переход к Колее 2 (ML-теория: Huyen DMLS Ch.1-4) или Проекту 1 (Wine Classifier)
+- **Следующий шаг:** Переход к Колее 2 (ML-теория: Huyen DMLS Ch.1-4)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
@@ -39,22 +39,33 @@
 - **IDE:** PyCharm Professional
 - **VCS:** Git + GitHub (атомарные коммиты, Conventional Commits)
 - **Контейнеризация:** Docker Desktop
-- **Структура проекта:** `src/` (продакшен), `tutorials/` (учебные скрипты), `tests/`, `data/`, `notebooks/`
+- **Структура проекта:** `src/` (продакшен), `learning/` (учебные треки), `projects/` (проекты-вехи), `tests/`, `data/`, `notebooks/`
 - **Стандарт оформления:** Строгий нейминг `step_NN_snake_case_name.py` и единый формат docstring для учебных скриптов.
 
 ## 📂 Структура проекта
 
-    ml-journey/
-    ├── src/                  # Продакшен-код (ML-пайплайны, модели)
-    ├── tutorials/            # Учебные скрипты по Matthes (158 файлов)
-    ├── tests/                # Unit-тесты (pytest)
-    ├── data/                 # Датасеты
-    ├── notebooks/            # Jupyter-ноутбуки для EDA
-    ├── COURSE_PLAN.md        # Детальный план курса с подглавами (источник истины)
-    ├── ROADMAP.md            # Карта из 5 проектов-вех
-    ├── LEARNING_JOURNAL.md   # Инженерное портфолио
-    ├── GIT_WORKFLOW.md       # Правила атомарных коммитов
-    └── README.md             # Этот файл
+```text
+ml-journey/
+├── learning/                 # Учебные треки
+│   ├── 01_python_core/       # Python (Matthes Ch.1-11)
+│   │   ├── tutorials/        # 158 учебных скриптов
+│   │   └── tests/            # Unit-тесты к скриптам
+│   ├── 02_ml_theory/         # ML-теория (Huyen DMLS)
+│   ├── 03_data_science/      # pandas, NumPy, Matplotlib
+│   ├── 04_math_for_ml/       # Линейная алгебра, статистика
+│   └── 05_engineering_basics/# SQL, HTTP/API, bash, Git
+├── projects/                 # 5 проектов-вех (см. ROADMAP.md)
+├── src/                      # Продакшен-код (общий для проектов)
+├── tests/                    # Тесты для проектов (src/)
+├── data/                     # Датасеты
+│   └── raw/                  # Исходные (неизменяемые) данные
+├── notebooks/                # Jupyter-ноутбуки для EDA
+├── COURSE_PLAN.md            # Детальный план курса (источник истины)
+├── ROADMAP.md                # Карта из 5 проектов-вех
+├── LEARNING_JOURNAL.md       # Инженерное портфолио
+├── GIT_WORKFLOW.md           # Правила атомарных коммитов
+└── README.md                 # Этот файл
+```
 
 ## 🔗 Ссылки
 - **GitHub:** [mitjagagin/ml-journey](https://github.com/mitjagagin/ml-journey)
@@ -63,7 +74,7 @@
 ## 📝 Правила работы
 - **Темп:** Микро-шаги с подтверждением (один шаг → "готово" → следующий)
 - **Коммиты:** Атомарные, по `GIT_WORKFLOW.md` (Conventional Commits)
-- **Код:** Type hints, docstrings, структура `src/` vs `tutorials/`
+- **Код:** Type hints, docstrings, структура `src/` vs `learning/`
 - **Документация:** Обновление `LEARNING_JOURNAL.md` после каждого этапа
 
 ---
