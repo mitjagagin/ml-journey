@@ -63,6 +63,7 @@ ml-journey/
 ├── COURSE_PLAN.md            # Детальный план курса (источник истины)
 ├── ROADMAP.md                # Карта из 5 проектов-вех
 ├── LEARNING_JOURNAL.md       # Инженерное портфолио
+├── GLOSSARY.md               # Словарь ML/AI терминов (SSOT)
 ├── GIT_WORKFLOW.md           # Правила атомарных коммитов
 └── README.md                 # Этот файл
 ```
