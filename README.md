@@ -4,9 +4,9 @@
 
 ## 📍 Текущий статус
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
-- **Прогресс:** Matthes Ch.1-10 закрыты полностью (Глава 10: Files and Exceptions завершена) — 151 учебный скрипт. Детальный план со всеми подглавами — в [`COURSE_PLAN.md`](COURSE_PLAN.md).
+- **Прогресс:** Matthes Ch.1-11 закрыты полностью (включая Главу 11: Testing Your Code) — 158 учебных скриптов. Детальный план со всеми подглавами — в [`COURSE_PLAN.md`](COURSE_PLAN.md).
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Matthes 11.1 (Testing a Function)
+- **Следующий шаг:** Переход к Колее 2 (ML-теория: Huyen DMLS Ch.1-4) или Проекту 1 (Wine Classifier)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
@@ -46,7 +46,7 @@
 
     ml-journey/
     ├── src/                  # Продакшен-код (ML-пайплайны, модели)
-    ├── tutorials/            # Учебные скрипты по Matthes (151+ файлов)
+    ├── tutorials/            # Учебные скрипты по Matthes (158 файлов)
     ├── tests/                # Unit-тесты (pytest)
     ├── data/                 # Датасеты
     ├── notebooks/            # Jupyter-ноутбуки для EDA
