@@ -103,7 +103,7 @@
 ### Колея 5: Инженерные основы
 - [ ] **SQLZoo** (SELECT, JOIN, GROUP BY) • [skip] Индексы
 - [ ] **HTTP/API** (REST, методы, JSON, requests)
-- [ ] **Linux/Bash** (навигация, файлы, пайплайны, скрипты) `[covered в Gift Ch.2]`
+- [ ] **Linux/Bash** (навигация, файлы, пайплайны, скрипты)
 - [ ] **Продвинутый Git** (ветки, PR, rebase) • [→P3] Git flow
 
 ---

@@ -151,7 +151,7 @@
 - [ ] Работа с JSON
 - [ ] Библиотеки requests и httpx
 
-**Linux и Bash (ментор)** `[covered в Gift Ch.2]`
+**Linux и Bash (ментор)**
 - [ ] Навигация (cd, ls, pwd)
 - [ ] Работа с файлами (cat, grep, awk)
 - [ ] Пайплайны и перенаправления
