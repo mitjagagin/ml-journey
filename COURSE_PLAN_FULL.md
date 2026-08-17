@@ -25,8 +25,8 @@
 ### Колея 2: ML-теория (Huyen DMLS, 11 глав)
 
 **Huyen DMLS, Глава 1: Overview of ML Systems**
-- [ ] 1.1 When to Use ML + Use Cases (эвристика «когда ML нужен, а когда нет»)
-- [ ] 1.2 ML in Research vs Production (включая challenges — шаг 160)
+- [x] 1.1 When to Use ML + Use Cases (эвристика «когда ML нужен, а когда нет» — шаги 160, 161)
+- [x] 1.2 ML in Research vs Production (включая challenges — шаг 162)
 - [x] 1.3 ML Systems vs Traditional Software (шаг 159)
 
 **Huyen DMLS, Глава 2: Introduction to ML Systems Design**

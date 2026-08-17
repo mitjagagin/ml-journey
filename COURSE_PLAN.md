@@ -25,8 +25,8 @@
 ### Колея 2: ML-теория (Huyen DMLS, 11 глав) — 🎯 АКТИВНАЯ ЗОНА
 
 **Глава 1: Overview of ML Systems**
-- [ ] 1.1 When to Use ML + Use Cases
-- [ ] 1.2 ML in Research vs Production (challenges)
+- [x] 1.1 When to Use ML + Use Cases (эвристика «когда ML нужен, а когда нет» — шаги 160, 161)
+- [x] 1.2 ML in Research vs Production (включая challenges — шаг 162)
 - [x] 1.3 ML Systems vs Traditional Software (шаг 159)
 
 **Глава 2: Introduction to ML Systems Design**
