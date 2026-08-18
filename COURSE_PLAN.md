@@ -30,12 +30,12 @@
 - [x] 1.3 ML Systems vs Traditional Software (шаг 159)
 
 **Глава 2: Introduction to ML Systems Design**
-- [ ] 2.1 Business and ML Objectives
-- [ ] 2.2 Requirements (reliability, scalability, maintainability, adaptability)
-- [ ] 2.3 Iterative Process
+- [x] 2.1 Business and ML Objectives
+- [x] 2.2 Requirements (reliability, scalability, maintainability, adaptability)
+- [x] 2.3 Iterative Process
 - [→P1] 2.4 Framing ML Problems + Types of ML Tasks
 - [→P1] 2.5 Objective Functions
-- [ ] 2.6 Mind Versus Data
+- [x] 2.6 Mind Versus Data
 
 **Глава 3: Data Engineering Fundamentals**
 - [ ] 3.1 Data Sources
