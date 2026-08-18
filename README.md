@@ -4,9 +4,9 @@
 
 ## 📍 Текущий статус
 - **Этап:** 0 — Фундамент: Python Core + ML-основы + математика (4-5 недель, интегрированный)
-- **Прогресс:** Matthes Ch.1-11 закрыты полностью (158 скриптов). Huyen DMLS Глава 1 закрыта полностью (шаги 159-162). Активный план с прогрессом — в [`COURSE_PLAN.md`](COURSE_PLAN.md); полная карта курса — в [`COURSE_PLAN_FULL.md`](COURSE_PLAN_FULL.md).
+- **Прогресс:** Matthes Ch.1-11 закрыты полностью (158 скриптов). Huyen DMLS Глава 1 закрыта полностью (шаги 159-162). Huyen DMLS Глава 2: пройдены пункты 2.1, 2.2, 2.3, 2.6 (шаги 163-166). Активный план с прогрессом — в [`COURSE_PLAN.md`](COURSE_PLAN.md); полная карта курса — в [`COURSE_PLAN_FULL.md`](COURSE_PLAN_FULL.md).
 - **Стек:** Python 3.10, Miniconda, PyCharm, Git, Docker Desktop
-- **Следующий шаг:** Huyen DMLS Глава 2: Introduction to ML Systems Design (пункт 2.1 Business and ML Objectives)
+- **Следующий шаг:** Huyen DMLS Глава 3: Data Engineering Fundamentals (пункт 3.1 Data Sources)
 - **Общий горизонт:** ~12 месяцев (реалистичный срок)
 
 ## 🎯 Цель проекта
