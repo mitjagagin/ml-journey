@@ -7,11 +7,12 @@
 | `[x]` | Пройдено |
 | `[~]` | В процессе |
 | `[ ]` | Очередь этапа: изучаем в этой колее/этапе |
-| `[→P1]`…`[→P5]` | Явно отложено: изучается в проекте N (обратная ссылка в секции проекта) |
 | `[skip]` | Вне скоупа Junior/Middle AI Engineer (причина в скобках) |
 | `[covered]` | Покрыто в другой колее/этапе (с указанием, где) |
 
 **Правило аудита для Дмитрия:** каждая строка плана обязана иметь маркер. Строка без маркера — дыра; ты имеешь право требовать с ментора ответ.
+
+**Принцип «Пакетной поставки»:** Вся теория из одной главы книги изучается в ОДНОМ месте (либо в Этапе 0, либо целиком в одном Проекте). Никаких разрывов между теорией и практикой.
 
 ---
 
@@ -22,7 +23,7 @@
 - Концепции и связь с ML: `LEARNING_JOURNAL.md`
 - Детальный чек-лист подглав: [`learning/01_python_core/README.md`](learning/01_python_core/README.md)
 
-### Колея 2: ML-теория (Huyen DMLS, 11 глав)
+### Колея 2: ML-теория (Huyen DMLS, концептуальные главы)
 
 **Huyen DMLS, Глава 1: Overview of ML Systems**
 - [x] 1.1 When to Use ML + Use Cases (эвристика «когда ML нужен, а когда нет» — шаги 160, 161)
@@ -30,67 +31,23 @@
 - [x] 1.3 ML Systems vs Traditional Software (шаг 159)
 
 **Huyen DMLS, Глава 2: Introduction to ML Systems Design**
-- [ ] 2.1 Business and ML Objectives
-- [ ] 2.2 Requirements: reliability, scalability, maintainability, adaptability
-- [ ] 2.3 Iterative Process
-- [→P1] 2.4 Framing ML Problems + Types of ML Tasks
-- [→P1] 2.5 Objective Functions
-- [ ] 2.6 Mind Versus Data (спор «данные против алгоритмов»)
+- [x] 2.1 Business and ML Objectives (шаг 163)
+- [x] 2.2 Requirements: reliability, scalability, maintainability, adaptability (шаг 164)
+- [x] 2.3 Iterative Process (шаг 165)
+- [ ] 2.4 Framing ML Problems + Types of ML Tasks
+- [ ] 2.5 Objective Functions
+- [x] 2.6 Mind Versus Data (спор «данные против алгоритмов» — шаг 166)
 
 **Huyen DMLS, Глава 3: Data Engineering Fundamentals**
 - [ ] 3.1 Data Sources
-- [→P2] 3.2 Data Formats (JSON, row/column-major, text/binary)
-- [→P2] 3.3 Data Models (relational, NoSQL, structured/unstructured)
-- [→P3] 3.4 Storage Engines and Processing (OLTP/OLAP, ETL)
-- [→P3] 3.5 Modes of Dataflow (databases/services/real-time; batch vs stream)
+- [ ] 3.2 Data Formats (JSON, row/column-major, text/binary)
+- [ ] 3.3 Data Models (relational, NoSQL, structured/unstructured)
+- [ ] 3.4 Storage Engines and Processing (OLTP/OLAP, ETL)
+- [ ] 3.5 Modes of Dataflow (databases/services/real-time; batch vs stream)
 
-**Huyen DMLS, Глава 4: Training Data**
-- [→P1] 4.1 Sampling (simple random, stratified, weighted, reservoir)
-- [ ] 4.2 Labeling (hand, natural, lack of labels)
-- [→P1] 4.3 Class Imbalance
-- [→P1] 4.4 Data Augmentation (transformations, perturbation, synthesis)
-
-**Huyen DMLS, Глава 5: Feature Engineering**
-- [ ] 5.1 Learned vs Engineered Features
-- [→P1] 5.2 Common Operations (missing values, scaling, discretization, encoding, crossing)
-- [→P1] 5.3 Data Leakage (причины, детекция)
-- [→P1] 5.4 Engineering Good Features (importance, generalization)
-
-**Huyen DMLS, Глава 6: Model Development and Offline Evaluation**
-- [→P1] 6.1 Model Development and Training
-- [→P1] 6.2 Evaluating ML Models (метрики)
-- [→P1] 6.3 Ensembles
-- [→P2] 6.4 Experiment Tracking and Versioning
-- [skip] 6.5 Distributed Training (Junior — один GPU/Colab)
-- [skip] 6.6 AutoML (уровень осведомлённости; не навык Junior)
-- [→P1] 6.7 Baselines
-- [→P1] 6.8 Evaluation Methods (slice-based, invariance)
-
-**Huyen DMLS, Глава 7: Model Deployment and Prediction Service**
-- [→P3] 7.1 Deployment Myths (4 мифа)
-- [→P2] 7.2 Batch vs Online Prediction (+ unification pipelines)
-- [→P5] 7.3 Model Compression (low-rank, distillation, pruning, quantization — перекликается с QLoRA)
-- [skip] 7.4 ML on Edge and in Browsers (вне нашего трека: сервер + Colab)
-
-**Huyen DMLS, Глава 8: Data Distribution Shifts and Monitoring**
-- [→P3] 8.1 Causes of ML System Failures (software + ML-specific)
-- [→P3] 8.2 Data Distribution Shifts (типы, детекция, адресация — дрейф)
-- [→P3] 8.3 Monitoring and Observability (ML-метрики, toolbox)
-
-**Huyen DMLS, Глава 9: Continual Learning and Test in Production**
-- [→P3] 9.1 Continual Learning (retraining, как часто обновлять)
-- [→P3] 9.2 Test in Production (shadow, A/B, canary, bandits; A/B вернётся в P5)
-
-**Huyen DMLS, Глава 10: Infrastructure and Tooling for MLOps**
-- [→P3] 10.1 Storage and Compute; Public vs Private Cloud
-- [→P2] 10.2 Development Environment + Containers (dev→prod)
-- [→P3] 10.3 Resource Management (cron, schedulers, orchestrators)
-- [→P2] 10.4 Model Store (MLflow) • [skip] Feature Store (не нужно Junior) • [→P4] Build vs Buy
-
-**Huyen DMLS, Глава 11: The Human Side of Machine Learning**
-- [→P4] 11.1 User Experience (consistency, smooth failing)
-- [ ] 11.2 Team Structure (cross-functional, end-to-end DS — карьерный контекст)
-- [→P5] 11.3 Responsible AI (фреймворк; перекликается с guardrails)
+*(Главы 4-6 DMLS перенесены целиком в Проект 1)*
+*(Главы 8-9, 10.1, 10.3 DMLS перенесены целиком в Проект 3)*
+*(Глава 11.2 DMLS: Team Structure — изучается в Этапе 0 как карьерный контекст)*
 
 ### Колея 3: Python для Data Science (Kaggle Learn + ментор)
 
@@ -161,13 +118,13 @@
 - [ ] Ветвление (branch, checkout, merge)
 - [ ] Pull Requests и code review
 - [ ] Rebase и разрешение конфликтов
-- [→P3] Git flow и стратегии (командные практики; для соло достаточно branch + PR)
+- [skip] Git flow и стратегии (для соло достаточно branch + PR)
 
 ---
 
-## 🟡 ЭТАП 1. Первый ML-проект: Wine Classifier (2-3 недели)
+## 🟡 ЭТАП 1. Проект 1: Wine Classifier (3-4 недели)
 
-### Колея 1: ML-инженерия (McMahon Ch.1-2)
+### Теория (изучается целиком в этом проекте)
 
 **McMahon, Глава 1: Introduction to ML Engineering**
 - [ ] 1.1 Taxonomy of data disciplines (DS, MLE, MLOps, DE — карьерный контекст)
@@ -186,30 +143,44 @@
 - [ ] 2.6 Develop: methodology, conda/pip, Poetry, Git strategies, model version control
 - [ ] 2.7 Deploy: options, DevOps/MLOps, CI/CD (GitHub Actions), continuous testing/training
 
-### Проект 1: Wine Classifier (Baseline)
+**Huyen DMLS, Глава 4: Training Data**
+- [ ] 4.1 Sampling (simple random, stratified, weighted, reservoir)
+- [ ] 4.2 Labeling (hand, natural, lack of labels)
+- [ ] 4.3 Class Imbalance
+- [ ] 4.4 Data Augmentation (transformations, perturbation, synthesis)
 
-**Что изучаем:**
-- [ ] Matthes Ch.1-11 (полностью, архив)
-- [ ] McMahon Ch.1-2 (настройка + процесс)
+**Huyen DMLS, Глава 5: Feature Engineering**
+- [ ] 5.1 Learned vs Engineered Features
+- [ ] 5.2 Common Operations (missing values, scaling, discretization, encoding, crossing)
+- [ ] 5.3 Data Leakage (причины, детекция)
+- [ ] 5.4 Engineering Good Features (importance, generalization)
 
-**Теория (обратные ссылки [→P1]):** DMLS 2.4-2.5, 4.1-4.4, 5.2-5.4, 6.1-6.3/6.7-6.8
+**Huyen DMLS, Глава 6: Model Development and Offline Evaluation**
+- [ ] 6.1 Model Development and Training
+- [ ] 6.2 Evaluating ML Models (метрики)
+- [ ] 6.3 Ensembles
+- [ ] 6.4 Experiment Tracking and Versioning
+- [skip] 6.5 Distributed Training (Junior — один GPU/Colab)
+- [skip] 6.6 AutoML (уровень осведомлённости; не навык Junior)
+- [ ] 6.7 Baselines
+- [ ] 6.8 Evaluation Methods (slice-based, invariance)
 
-**Практика:**
+### Практика
 - [ ] Загрузка датасета Wine (sklearn.datasets)
 - [ ] EDA с pandas и matplotlib
 - [ ] Feature engineering (масштабирование, кодирование)
 - [ ] Обучение моделей (Logistic Regression, Random Forest)
 - [ ] Оценка метрик (accuracy, precision, recall, F1)
 - [ ] Unit-тесты с pytest
-- [ ] Структура проекта (src/, tests/, data/, notebooks/)
+- [ ] Структура проекта (`src/`, `tests/`, `data/`, `notebooks/`)
 
 **Результат:** Рабочий классификатор вина с тестами и документацией.
 
 ---
 
-## 🟠 ЭТАП 2. ML as a Service: House Price Predictor (3-4 недели)
+## 🟠 ЭТАП 2. Проект 2: House Price Predictor (3-4 недели)
 
-### Колея 1: ML-инженерия (McMahon Ch.3-4)
+### Теория (изучается целиком в этом проекте)
 
 **McMahon, Глава 3: From Model to Model Factory**
 - [ ] 3.1 Defining the model factory
@@ -217,10 +188,12 @@
 - [ ] 3.3 Preparing the data
 - [ ] 3.4 Engineering features (categorical, numerical)
 - [ ] 3.5 Designing training system (train-run, train-persist, retraining)
-- [→P3] 3.6 Drift detection (data/concept), diagnosing, remediating
-- [ ] 3.7 Automating training + hyperparameter optimization (Hyperopt, Optuna) • [skip] AutoML (auto-sklearn/AutoKeras — уровень осведомлённости)
+- [skip] 3.6 Drift detection → Проект 3
+- [ ] 3.7 Automating training + hyperparameter optimization (Hyperopt, Optuna)
+- [skip] AutoML (auto-sklearn/AutoKeras — уровень осведомлённости)
 - [ ] 3.8 Persisting your models
-- [ ] 3.9 Pipelines: Scikit-learn • [skip] Spark ML pipelines
+- [ ] 3.9 Pipelines: Scikit-learn
+- [skip] Spark ML pipelines (по потребности вакансии)
 
 **McMahon, Глава 4: Packaging Up**
 - [ ] 4.1 Writing good Python (OOP/functional, standards)
@@ -230,29 +203,29 @@
 - [ ] 4.5 Testing, logging, error handling
 - [ ] 4.6 Securing solutions (свой код + зависимости)
 
-### Проект 2: House Price Predictor
+**Gift, Глава 3: MLOps for Containers and Edge Devices**
+- [ ] 3.1 Containers (Runtime, Creating, Running, Best Practices)
+- [ ] 3.2 Serving a Trained Model Over HTTP
+- [skip] 3.3 Edge Devices (Coral, Azure Percept, TFHub, Porting Non-TPU) — вне скоупа
+- [ ] 3.4 Containers for Managed ML Systems
+- [ ] Build Once, Run Many Workflow
 
-**Что изучаем:**
-- [ ] McMahon Ch.3-4
-
-**Теория (обратные ссылки [→P2]):** DMLS 2.4, 3.2-3.3, 6.4, 7.2, 10.2, 10.4; McMahon 6.2, 8.1-8.2 (fastapi), 8.4
-
-**Практика:**
+### Практика
 - [ ] Загрузка датасета California Housing
-- [ ] Feature engineering (категориальные, числовые признаки)
-- [ ] Scikit-Learn Pipelines
+- [ ] Scikit-Learn Pipelines и feature engineering
 - [ ] Model persistence (joblib)
 - [ ] REST API с FastAPI
 - [ ] Dockerfile и docker-compose
 - [ ] Unit-тесты API
+- [ ] Experiment tracking с MLflow
 
-**Результат:** Полноценный ML-пайплайн с API и контейнеризацией.
+**Результат:** Полноценный ML-пайплайн с API, контейнеризацией и трекингом экспериментов.
 
 ---
 
-## 🔵 ЭТАП 3. MLOps + Cloud: Sentiment Analyzer API (4-5 недель)
+## 🔵 ЭТАП 3. Проект 3: Sentiment Analyzer API (4-5 недель)
 
-### Колея 1: MLOps и деплой (Gift Ch.1-12 + McMahon Ch.5-6)
+### Теория (изучается целиком в этом проекте)
 
 **Gift, Глава 1: Introduction to MLOps**
 - [ ] 1.1 Rise of the ML Engineer and MLOps
@@ -261,24 +234,21 @@
 - [ ] 1.4 An MLOps Hierarchy of Needs
 - [ ] 1.5 Implementing DevOps
 - [ ] 1.6 Configuring CI with GitHub Actions
-- [→P3] 1.7 DataOps and Data Engineering • [→P3] Platform Automation • [→P3] MLOps
+- [ ] 1.7 DataOps and Data Engineering
+- [ ] Platform Automation
+- [ ] MLOps
 
 **Gift, Глава 2: MLOps Foundations** `[covered в Колеях 3-5 Этапа 0]`
 - [covered] Bash and Linux (Колея 5: Linux и Bash)
 - [covered] Python Crash Course, Math, Data Science (Колеи 3-4)
 - [covered] Build MLOps Pipeline from Zero (практика в Проекте 3)
 
-**Gift, Глава 3: MLOps for Containers and Edge Devices**
-- [ ] 3.1 Containers (Runtime, Creating, Running, Best Practices)
-- [ ] 3.2 Serving a Trained Model Over HTTP
-- [skip] 3.3 Edge Devices (Coral, Azure Percept, TFHub, Porting Non-TPU) — вне скоупа
-- [ ] 3.4 Containers for Managed ML Systems • [→P3] Build Once, Run Many Workflow
-
 **Gift, Глава 4: Continuous Delivery for ML Models**
 - [ ] 4.1 Packaging for ML Models
 - [ ] 4.2 Infrastructure as Code for CD of ML Models
-- [→P3] 4.3 Using Cloud Pipelines • [→P3] Controlled Rollout of Models (blue-green, canary)
-- [→P3] 4.4 Testing Techniques for Model Deployment
+- [ ] 4.3 Using Cloud Pipelines
+- [ ] 4.4 Controlled Rollout of Models (blue-green, canary)
+- [ ] 4.4 Testing Techniques for Model Deployment
 
 **Gift, Глава 5: AutoML and KaizenML**
 - [skip] 5.1 AutoML (MLOps Industrial Revolution) — уровень осведомлённости
@@ -286,20 +256,25 @@
 - [skip] 5.3 Feature Stores (не нужно Junior)
 - [skip] 5.4 Apple/Google/Azure/AWS AutoML — уровень осведомлённости
 - [skip] 5.5 Open Source AutoML (Ludwig, FLAML) — уровень осведомлённости
-- [→P3] 5.6 Model Explainability
+- [ ] 5.6 Model Explainability
 
 **Gift, Глава 6: Monitoring and Logging**
 - [ ] 6.1 Observability for Cloud MLOps
-- [ ] 6.2 Introduction to Logging • [→P3] Logging in Python • [→P3] Modifying Log Levels
-- [→P3] 6.3 Logging Different Applications
-- [→P3] 6.4 Monitoring and Observability • [→P3] Basics of Model Monitoring
-- [→P3] 6.5 Monitoring Drift (AWS SageMaker, Azure ML)
+- [ ] 6.2 Introduction to Logging
+- [ ] Logging in Python
+- [ ] Modifying Log Levels
+- [ ] 6.3 Logging Different Applications
+- [ ] 6.4 Monitoring and Observability
+- [ ] Basics of Model Monitoring
+- [ ] 6.5 Monitoring Drift (AWS SageMaker, Azure ML)
 
 **Gift, Глава 7: MLOps for AWS** (основной фокус)
 - [ ] 7.1 Introduction to AWS
 - [ ] 7.2 Getting Started with AWS Services
-- [→P3] 7.3 MLOps on AWS • [→P3] MLOps Cookbook on AWS
-- [→P3] 7.4 CLI Tools • [→P3] Flask Microservice
+- [ ] 7.3 MLOps on AWS
+- [ ] MLOps Cookbook on AWS
+- [ ] 7.4 CLI Tools
+- [ ] Flask Microservice
 - [skip] 7.5 AWS Lambda Recipes (serverless покрыт McMahon 5)
 - [ ] 7.6 Applying AWS ML to the Real World
 
@@ -313,27 +288,35 @@
 - [skip] 10.1-10.5 Why Interoperability, ONNX, ONNX Model Zoo, Convert PyTorch/TensorFlow to ONNX, Generic ONNX Checker, Deploy ONNX to Azure, Apple Core ML, Edge Integration — вне скоупа Junior
 
 **Gift, Глава 11: Building MLOps CLI Tools and Microservices**
-- [→P3] 11.1 Python Packaging • [→P3] The Requirements File
-- [→P3] 11.2 Command Line Tools • [→P3] Creating a Dataset Linter • [→P3] Modularizing a CLI Tool
-- [→P3] 11.3 Microservices • [→P3] Creating a Serverless Function • [→P3] Authenticating to Cloud Functions
-- [→P3] 11.4 Building a Cloud-Based CLI • [→P3] ML CLI Workflows
+- [ ] 11.1 Python Packaging
+- [ ] The Requirements File
+- [ ] 11.2 Command Line Tools
+- [ ] Creating a Dataset Linter
+- [ ] Modularizing a CLI Tool
+- [ ] 11.3 Microservices
+- [ ] Creating a Serverless Function
+- [ ] Authenticating to Cloud Functions
+- [ ] 11.4 Building a Cloud-Based CLI
+- [ ] ML CLI Workflows
 
 **Gift, Глава 12: ML Engineering and MLOps Case Studies**
 - [ ] 12.1 Unlikely Benefits of Ignorance in Building ML Models
-- [→P3] 12.2 MLOps Projects (Sqor Sports, Mechanical Turk, Influencer Rank, Athlete Intelligence)
+- [ ] 12.2 MLOps Projects (Sqor Sports, Mechanical Turk, Influencer Rank, Athlete Intelligence)
 - [ ] 12.3 The Perfect Technique Versus the Real World
-- [→P3] 12.4 Critical Challenges in MLOps • [→P3] Ethical and Unintended Consequences
+- [ ] 12.4 Critical Challenges in MLOps
+- [ ] Ethical and Unintended Consequences
 - [ ] 12.5 Final Recommendations to Implement MLOps
-- [→P3] 12.6 Data Governance and Cybersecurity • [→P3] MLOps Design Patterns
+- [ ] 12.6 Data Governance and Cybersecurity
+- [ ] MLOps Design Patterns
 
 **Gift, Приложения**
 - [skip] A. Key Terms (покрывается GLOSSARY.md)
-- [→P3] B. Technology Certifications (AWS ML Specialty)
+- [ ] B. Technology Certifications (AWS ML Specialty)
 - [skip] C. Remote Work (не в скоупе)
 - [skip] D. Think Like a VC (не в скоупе)
-- [→P3] E. Building a Technical Portfolio for MLOps
+- [ ] E. Building a Technical Portfolio for MLOps
 - [skip] F-G. Case Studies and Resources (не в скоупе)
-- [→P3] H. Technical Project Management
+- [ ] H. Technical Project Management
 
 **McMahon, Глава 5: Deployment Patterns and Tools**
 - [ ] 5.1 Architecting systems (building with principles)
@@ -350,18 +333,26 @@
 - [skip] 6.4 Scaling with Ray (по потребности вакансии)
 - [ ] 6.5 Designing systems at scale (концептуальное резюме)
 
-### Проект 3: Sentiment Analyzer API
+**Huyen DMLS, Глава 8: Data Distribution Shifts and Monitoring**
+- [ ] 8.1 Causes of ML System Failures (software + ML-specific)
+- [ ] 8.2 Data Distribution Shifts (типы, детекция, адресация — дрейф)
+- [ ] 8.3 Monitoring and Observability (ML-метрики, toolbox)
 
-**Что изучаем:**
-- [ ] Gift Ch.1-12 (выборочно)
-- [ ] McMahon Ch.5-6
+**Huyen DMLS, Глава 9: Continual Learning and Test in Production**
+- [ ] 9.1 Continual Learning (retraining, как часто обновлять)
+- [ ] 9.2 Test in Production (shadow, A/B, canary, bandits; A/B вернётся в P5)
 
-**Теория (обратные ссылки [→P3]):** DMLS 3.4-3.5, 7.1, 8.1-8.3, 9.1-9.2, 10.1-10.3; Gift 1.7, 3.4, 4.3-4.4, 5.6, 6.2-6.5, 7.3-7.4, 11.1-11.4, 12.2-12.6; McMahon 3.6; Колея 5 «Git flow и стратегии»
+**Huyen DMLS, Глава 10: Infrastructure and Tooling for MLOps**
+- [ ] 10.1 Storage and Compute; Public vs Private Cloud
+- [skip] 10.2 Development Environment + Containers → Проект 2
+- [ ] 10.3 Resource Management (cron, schedulers, orchestrators)
+- [skip] 10.4 Model Store (MLflow) → Проект 2
+- [skip] Feature Store (не нужно Junior)
+- [skip] Build vs Buy → Проект 4
 
-**Практика:**
+### Практика
 - [ ] Обучение модели классификации тональности (TF-IDF + LogisticRegression)
-- [ ] Создание REST API с FastAPI
-- [ ] Dockerfile и docker-compose
+- [ ] Создание REST API с FastAPI + Docker
 - [ ] GitHub Actions для CI/CD
 - [ ] Деплой на AWS (EC2 или Lambda)
 - [ ] Мониторинг с Evidently AI
@@ -372,9 +363,9 @@
 
 ---
 
-## 🟣 ЭТАП 4. Foundation Models + RAG (5-6 недель)
+## 🟣 ЭТАП 4. Проект 4: RAG Chatbot (5-6 недель)
 
-### Колея 1: AI Engineering (Huyen AI Ch.1-6 + HF NLP Course + Iusztin Ch.1-4)
+### Теория (изучается целиком в этом проекте)
 
 **Hugging Face NLP Course (официальный, 10-12 часов, встроить параллельно)**
 - [ ] Tokenization и pipelines
@@ -412,8 +403,12 @@
 - [ ] 5.3 Defensive Prompt Engineering (jailbreaking, prompt injection, information extraction, defenses)
 
 **Huyen AI, Глава 6: RAG and Agents**
-- [ ] 6.1 RAG Architecture • 6.2 Retrieval Algorithms • 6.3 Retrieval Optimization • 6.4 RAG Beyond Texts *(Этап 4, P4)*
-- [→P5] 6.5 Agents (overview, tools, planning, failure modes and evaluation) • 6.6 Memory *(Этап 5)*
+- [ ] 6.1 RAG Architecture
+- [ ] 6.2 Retrieval Algorithms
+- [ ] 6.3 Retrieval Optimization
+- [ ] 6.4 RAG Beyond Texts
+- [skip] 6.5 Agents → Проект 5
+- [skip] 6.6 Memory → Проект 5
 
 **Iusztin, Глава 1: LLM Twin Concept and Architecture**
 - [ ] 1.1 Understanding the LLM Twin concept (what, why matters, why not ChatGPT)
@@ -425,12 +420,13 @@
 - [ ] 2.1 Python ecosystem and installation (Poetry, Poe the Poet)
 - [ ] 2.2 MLOps/LLMOps tooling (HF model registry, ZenML, Comet ML, Opik)
 - [ ] 2.3 Databases (MongoDB NoSQL, Qdrant vector)
-- [→P5] 2.4 Preparing for AWS (SageMaker — опция; базовый трек: Colab + Docker)
+- [skip] 2.4 Preparing for AWS (SageMaker — опция; базовый трек: Colab + Docker)
 
 **Iusztin, Глава 3: Data Engineering**
 - [ ] 3.1 Designing the data collection pipeline
 - [ ] 3.2 Implementing the data collection pipeline (ZenML, dispatcher, crawlers, ORM/ODM)
-- [ ] 3.3 Gathering raw data into the data warehouse • 3.4 Troubleshooting
+- [ ] 3.3 Gathering raw data into the data warehouse
+- [ ] 3.4 Troubleshooting
 
 **Iusztin, Глава 4: RAG Feature Pipeline**
 - [ ] 4.1 Understanding RAG (vanilla framework, hallucinations, old information)
@@ -440,16 +436,17 @@
 - [ ] 4.5 RAG feature pipeline architecture (feature store, batch vs streaming, CDC)
 - [ ] 4.6 Implementing the RAG feature pipeline (cleaning/chunking/embedding handlers)
 
-### Проект 4: RAG-приложение для документов
+**Huyen DMLS, Глава 10: Infrastructure and Tooling for MLOps**
+- [skip] 10.1, 10.3 → Проект 3
+- [skip] 10.2, 10.4 → Проект 2
+- [ ] Build vs Buy (выбор между готовыми решениями и собственной разработкой)
 
-**Что изучаем:**
-- [ ] Huyen AI Ch.1-6
-- [ ] HF NLP Course
-- [ ] Iusztin Ch.1-4
+**Huyen DMLS, Глава 11: The Human Side of Machine Learning**
+- [ ] 11.1 User Experience (consistency, smooth failing)
+- [skip] 11.2 Team Structure → Этап 0
+- [skip] 11.3 Responsible AI → Проект 5
 
-**Теория (обратные ссылки [→P4]):** DMLS 10.4 (Build vs Buy), 11.1 (User Experience); McMahon 7.1, 7.4-7.5 (LLMs intro)
-
-**Практика:**
+### Практика
 - [ ] Сбор данных (парсинг PDF/веб-страниц)
 - [ ] Чанкинг документов
 - [ ] Создание embeddings (OpenAI или локальные модели)
@@ -463,9 +460,9 @@
 
 ---
 
-## 🔴 ЭТАП 5. Fine-tuning + Production-ready система: LLM Twin (5-6 недель)
+## 🔴 ЭТАП 5. Проект 5: LLM Twin (5-6 недель)
 
-### Колея 1: Fine-tuning и продакшен (Iusztin Ch.5-11 + Huyen AI Ch.7-10)
+### Теория (изучается целиком в этом проекте)
 
 **Iusztin, Глава 5: Supervised Fine-Tuning**
 - [ ] 5.1 Creating an instruction dataset (curation: filtering, dedup, decontamination, quality eval, augmentation)
@@ -510,7 +507,17 @@
 - [ ] 11.5 Adding LLMOps (CI/CD/CT, GitHub Actions, prompt monitoring, alerting)
 
 **Iusztin, Приложение: MLOps Principles**
-- [ ] A.1 Automation • A.2 Versioning • A.3 Experiment tracking • A.4 Testing • A.5 Monitoring (logs, metrics, drifts, alerts) • A.6 Reproducibility
+- [ ] A.1 Automation
+- [ ] A.2 Versioning
+- [ ] A.3 Experiment tracking
+- [ ] A.4 Testing
+- [ ] A.5 Monitoring (logs, metrics, drifts, alerts)
+- [ ] A.6 Reproducibility
+
+**Huyen AI, Глава 6: RAG and Agents**
+- [skip] 6.1-6.4 → Проект 4
+- [ ] 6.5 Agents (overview, tools, planning, failure modes and evaluation)
+- [ ] 6.6 Memory
 
 **Huyen AI, Глава 7: Finetuning**
 - [ ] 7.1 Finetuning Overview
@@ -525,22 +532,31 @@
 
 **Huyen AI, Глава 9: Inference Optimization**
 - [ ] 9.1 Understanding Inference Optimization (overview, performance metrics TTFT/TPOT, AI accelerators)
-- [ ] 9.2 Model Optimization (quantization, distillation, parallelism) • 9.3 Inference Service Optimization (batching, KV-cache, speculative decoding)
+- [ ] 9.2 Model Optimization (quantization, distillation, parallelism)
+- [ ] 9.3 Inference Service Optimization (batching, KV-cache, speculative decoding)
 
 **Huyen AI, Глава 10: AI Engineering Architecture and User Feedback**
 - [ ] 10.1 Architecture: Step 1-5 (enhance context, guardrails, router/gateway, caches, agent patterns)
-- [ ] 10.2 Monitoring and Observability • 10.3 AI Pipeline Orchestration
+- [ ] 10.2 Monitoring and Observability
+- [ ] 10.3 AI Pipeline Orchestration
 - [ ] 10.4 User Feedback (extracting conversational feedback, feedback design, limitations)
 
-### Проект 5: LLM Twin (Production-ready)
+**Huyen DMLS, Глава 7: Model Deployment and Prediction Service**
+- [skip] 7.1 Deployment Myths → Проект 3
+- [skip] 7.2 Batch vs Online Prediction → Проект 2
+- [ ] 7.3 Model Compression (low-rank, distillation, pruning, quantization — перекликается с QLoRA)
+- [skip] 7.4 ML on Edge and in Browsers (вне нашего трека: сервер + Colab)
 
-**Что изучаем:**
-- [ ] Iusztin Ch.5-11 + Приложение
-- [ ] Huyen AI Ch.7-10
+**Huyen DMLS, Глава 9: Continual Learning and Test in Production**
+- [skip] 9.1 Continual Learning → Проект 3
+- [ ] 9.2 Test in Production (A/B тестирование для LLM)
 
-**Теория (обратные ссылки [→P5]):** DMLS 7.3 (model compression), 9.2 (test in production), 11.3 (responsible AI); McMahon 7.2-7.3, 7.6-7.7 (DL scaling, fine-tuning, LLMOps, PromptOps); Huyen AI 6.5-6.6 (agents + memory)
+**Huyen DMLS, Глава 11: The Human Side of Machine Learning**
+- [skip] 11.1 User Experience → Проект 4
+- [skip] 11.2 Team Structure → Этап 0
+- [ ] 11.3 Responsible AI (фреймворк; перекликается с guardrails)
 
-**Практика (на Google Colab):**
+### Практика (на Google Colab)
 - [ ] Сбор данных (LinkedIn, GitHub, Medium)
 - [ ] Создание instruction dataset
 - [ ] Fine-tuning с LoRA/QLoRA
