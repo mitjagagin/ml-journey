@@ -19,7 +19,7 @@
 - ✅ Написан и протестирован учебный скрипт в `learning/`
 - ✅ Написан или обновлён тест
 - ✅ Добавлена новая функция/модуль в `src/`
-- ✅ Исправлена ошибка (bugfix)
+- ✅ Исправлена ошибка
 - ✅ Обновлена документация репозитория (`README.md`, `COURSE_PLAN.md`, `LEARNING_JOURNAL.md`, `GLOSSARY.md`, docstrings)
 - ✅ Изменена конфигурация (`requirements.txt`, `.gitignore`, `pyproject.toml`)
 - ✅ Закрыта глава или крупный блок и обновлены соответствующие документы репозитория
@@ -30,8 +30,7 @@
 - была диагностика без правки файлов;
 - менялись только локальные файлы:
   - `mentor_prompt.md`;
-  - `project_state.md`;
-  - `flow.md`.
+  - `project_state.md`.
 
 ---
 
@@ -63,6 +62,7 @@ feat(ml-theory): add step 167 framing ml problems
 fix(data): handle missing values in feature engineering
 docs(readme): update current learning status
 docs(course-plan): mark Huyen DMLS chapter 2 progress
+docs(course-plan): mark Huyen DMLS chapter 2 as completed
 test(classifier): add unit tests for wine classifier
 chore(deps): update scikit-learn
 ```
@@ -86,6 +86,8 @@ chore(deps): update scikit-learn
 
 ### 1. Проверить статус
 
+Перед любым добавлением файлов обязательно выполнить:
+
 ```bash
 git status
 ```
@@ -93,6 +95,8 @@ git status
 ### 2. Добавить конкретные файлы
 
 Добавляй только реально изменённые файлы репозитория.
+
+В учебном процессе файлы добавляются **по одному файлу на команду**.
 
 Пример для учебного скрипта:
 
@@ -107,6 +111,12 @@ git add README.md
 git add COURSE_PLAN.md
 git add LEARNING_JOURNAL.md
 git add GLOSSARY.md
+```
+
+Не используй многофайловый вариант:
+
+```bash
+git add COURSE_PLAN.md LEARNING_JOURNAL.md GLOSSARY.md
 ```
 
 ### 3. Сделать коммит
@@ -127,13 +137,29 @@ git log --oneline -5
 git push origin main
 ```
 
+### 6. Проверить статус после push
+
+После push полезно выполнить:
+
+```bash
+git status
+```
+
+Ожидаемый результат для полностью закрытой работы:
+
+```text
+nothing to commit, working tree clean
+```
+
+Если в статусе остались только локальные файлы (`mentor_prompt.md`, `project_state.md`), их не добавлять и не коммитить.
+
 ---
 
 ## ⚠️ Правило для `git add .`
 
 `git add .` **не используется по умолчанию**.
 
-Предпочтительно добавлять файлы явно:
+Предпочтительно добавлять файлы явно и по одному:
 
 ```bash
 git add path/to/file.py
@@ -146,8 +172,8 @@ git add path/to/file.py
 3. среди изменений нет локальных файлов:
    - `mentor_prompt.md`;
    - `project_state.md`;
-   - `flow.md`;
-4. нет временных файлов, кэша, артефактов IDE или окружения.
+4. нет временных файлов, кэша, артефактов IDE или окружения;
+5. Дмитрий явно понимает, какие файлы будут добавлены.
 
 ---
 
@@ -156,6 +182,7 @@ git add path/to/file.py
 Правила:
 
 - одна команда — одна строка;
+- один файл — одна команда `git add`;
 - не объединять команды через `&&`;
 - не объединять команды через `;`;
 - перед `git add` всегда выполнять `git status`;
@@ -170,7 +197,23 @@ git commit -m "feat(ml-theory): add step 167 framing ml problems"
 git push origin main
 ```
 
+Правильно для нескольких документов:
+
+```bash
+git status
+git add COURSE_PLAN.md
+git add LEARNING_JOURNAL.md
+git add GLOSSARY.md
+git commit -m "docs(course-plan): mark Huyen DMLS chapter 2 as completed"
+git push origin main
+git status
+```
+
 Неправильно:
+
+```bash
+git add COURSE_PLAN.md LEARNING_JOURNAL.md GLOSSARY.md
+```
 
 ```bash
 git add . && git commit -m "update" && git push
@@ -202,8 +245,7 @@ git add .; git commit -m "fix"; git push
 - было обсуждение ошибки без изменения файлов;
 - менялись только локальные файлы:
   - `mentor_prompt.md`;
-  - `project_state.md`;
-  - `flow.md`.
+  - `project_state.md`.
 
 ### Для проектной работы
 
@@ -226,16 +268,72 @@ git add .; git commit -m "fix"; git push
 
 ---
 
+## 📝 Docs-коммит после закрытия главы или крупного блока
+
+Если после закрытия главы или крупного блока обновлялись файлы репозитория, нужно сделать отдельный docs-коммит.
+
+Обычно это файлы:
+
+- `COURSE_PLAN.md`;
+- `LEARNING_JOURNAL.md`;
+- `GLOSSARY.md`;
+- `README.md`, если изменился публичный статус;
+- `ROADMAP.md`, если закрыт этап или изменился статус проекта;
+- `COURSE_PLAN_FULL.md`, если изменился скоуп, этап или структура полной карты.
+
+Перед docs-коммитом обязательно выполнить:
+
+```bash
+git status
+```
+
+Добавлять файлы нужно по одному:
+
+```bash
+git add COURSE_PLAN.md
+git add LEARNING_JOURNAL.md
+git add GLOSSARY.md
+```
+
+Если `README.md` тоже менялся:
+
+```bash
+git add README.md
+```
+
+Если `ROADMAP.md` или `COURSE_PLAN_FULL.md` не менялись, не добавляй их.
+
+Затем выполнить:
+
+```bash
+git commit -m "docs(course-plan): mark Huyen DMLS chapter 2 as completed"
+```
+
+```bash
+git push origin main
+```
+
+После push выполнить финальную проверку:
+
+```bash
+git status
+```
+
+Сессию можно считать закрытой только после успешного push и проверки статуса.
+
+---
+
 ## 🎓 Для учебного курса
 
 После каждого файлового микро-шага:
 
 1. Убедиться, что код работает.
 2. Выполнить `git status`.
-3. Добавить конкретный изменённый файл.
+3. Добавить конкретный изменённый файл одной командой `git add`.
 4. Сделать атомарный коммит.
 5. Выполнить `git push origin main`.
-6. Только после этого переходить к следующему учебному микро-шагу.
+6. При необходимости выполнить `git status`.
+7. Только после подтверждения успешного commit/push переходить к следующему учебному микро-шагу.
 
 Если файловых изменений нет — коммит не нужен.
 
@@ -271,7 +369,6 @@ git branch -M main
 |---|---|
 | `mentor_prompt.md` | системный промпт ментора |
 | `project_state.md` | состояние проекта между сессиями |
-| `flow.md` | инструкция запуска и закрытия сессий |
 
 Эти файлы нужны только для управления сессиями с ментором и не являются частью портфолио.
 
@@ -291,15 +388,32 @@ git status
 
 - [ ] Изменения относятся к репозиторию, а не к локальным файлам.
 - [ ] Код запускается или изменение проверено вручную.
-- [ ] Выполнен `git status`.
+- [ ] Выполнен `git status` перед `git add`.
 - [ ] В индекс добавлены только нужные файлы.
+- [ ] Файлы добавлены в индекс по одному.
+- [ ] Не использован многофайловый `git add file1 file2 file3`.
+- [ ] Не использован `git add .` без предварительной проверки.
 - [ ] Сообщение коммита конкретное и соответствует Conventional Commits.
-- [ ] Локальные файлы `mentor_prompt.md`, `project_state.md`, `flow.md` не добавлены.
+- [ ] Локальные файлы `mentor_prompt.md`, `project_state.md` не добавлены.
 - [ ] Команды выполняются по одной строке.
 - [ ] Push выполняется через `git push origin main`.
 
 ---
 
+## ✅ Чек-лист перед закрытием сессии или главы
+
+Перед финальным завершением сессии проверь:
+
+- [ ] Все файловые микро-шаги закоммичены и запушены.
+- [ ] Если обновлялись документы репозитория, выполнен docs-коммит.
+- [ ] Перед docs-коммитом был выполнен `git status`.
+- [ ] Репозиторные файлы добавлялись через `git add` по одному.
+- [ ] После push выполнен финальный `git status`.
+- [ ] Локальные файлы `mentor_prompt.md`, `project_state.md` не добавлены в Git.
+- [ ] Если `project_state.md` обновлялся, он остался локальным и не попал в коммит.
+
+---
+
 **Правило утверждено:** 2026-08-01  
-**Обновлено:** 2026-08-20  
+**Обновлено:** 2026-08-23  
 **Статус:** Активно для всех проектов в этом репозитории
