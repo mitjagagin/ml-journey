@@ -37,8 +37,8 @@
 - [x] 2.1 Business and ML Objectives (шаг 163)
 - [x] 2.2 Requirements: reliability, scalability, maintainability, adaptability (шаг 164)
 - [x] 2.3 Iterative Process (шаг 165)
-- [ ] 2.4 Framing ML Problems + Types of ML Tasks
-- [ ] 2.5 Objective Functions
+- [x] 2.4 Framing ML Problems + Types of ML Tasks (шаги 167, 168)
+- [x] 2.5 Objective Functions (шаг 169)
 - [x] 2.6 Mind Versus Data (шаг 166)
 
 **Глава 3: Data Engineering Fundamentals**
