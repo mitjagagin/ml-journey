@@ -38,9 +38,7 @@ def print_objective_functions() -> None:
 
 def demonstrate_business_vs_ml_objective() -> None:
     """Показывает разницу между бизнес-метрикой и ML-целевой функцией."""
-    print("=" * 70)
-    print("Важно: Бизнес-метрика ≠ ML-целевая функция")
-    print("=" * 70)
+    print("Бизнес-метрика и ML-целевая функция:")
     print()
     print("Пример:")
     print("  Бизнес-цель: Максимизировать прибыль от подписок")
