@@ -43,10 +43,10 @@
 
 **Глава 3: Data Engineering Fundamentals**
 
-- [ ] 3.1 Data Sources
-- [ ] 3.2 Data Formats (JSON, row/column-major, text/binary)
-- [ ] 3.3 Data Models (relational, NoSQL, structured/unstructured)
-- [ ] 3.4 Storage Engines and Processing (OLTP/OLAP, ETL)
+- [x] 3.1 Data Sources (шаг 170)
+- [x] 3.2 Data Formats (JSON, row/column-major, text/binary) (шаг 171)
+- [x] 3.3 Data Models (relational, NoSQL, structured/unstructured) (шаг 172)
+- [x] 3.4 Storage Engines and Processing (OLTP/OLAP, ETL) (шаг 173)
 - [ ] 3.5 Modes of Dataflow (databases/services/real-time; batch vs stream)
 
 *(Главы 4-6 DMLS перенесены целиком в Проект 1)*  
