@@ -47,7 +47,7 @@
 - [x] 3.2 Data Formats (JSON, row/column-major, text/binary) (шаг 171)
 - [x] 3.3 Data Models (relational, NoSQL, structured/unstructured) (шаг 172)
 - [x] 3.4 Storage Engines and Processing (OLTP/OLAP, ETL) (шаг 173)
-- [ ] 3.5 Modes of Dataflow (databases/services/real-time; batch vs stream)
+- [x] 3.5 Modes of Dataflow (databases/services/real-time; batch vs stream) (шаги 174, 175)
 
 *(Главы 4-6 DMLS перенесены целиком в Проект 1)*  
 *(Главы 8-9, 10.1, 10.3 DMLS перенесены целиком в Проект 3)*
