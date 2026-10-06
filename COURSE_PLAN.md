@@ -54,7 +54,7 @@
 
 ### Колея 3: Python для Data Science
 
-- [ ] **Pandas** (Kaggle Learn: DataFrame, фильтрация, groupby, пропуски)
+- [x] **Pandas** (DataFrame, фильтрация, groupby, пропуски, маппинг, чтение/запись) (шаги 176–181)
 - [ ] **NumPy** (ndarray, срезы, broadcasting, linalg)
 - [ ] **Matplotlib/Seaborn** (графики, распределения, heatmaps)
 
